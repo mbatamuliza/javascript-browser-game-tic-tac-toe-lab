@@ -14,7 +14,7 @@
 //7) Create Reset functionality.
 
 /*-------------------------------- Constants --------------------------------*/
-
+const winningCombos = [
 [0, 1, 2],
 [3, 4, 5],
 [6, 7, 8],
@@ -23,6 +23,7 @@
 [2, 5, 8],
 [0, 4, 8],
 [2, 4, 6]
+]
 
 /*---------------------------- Variables (state) ----------------------------*/
 
@@ -31,12 +32,7 @@ let turn = "X"
 let winner = false;
 let tie = false;
 
-const winningCombos = [
-    [0, 1, 2],
-    [3, 4, 5],
-    // and so on
-  ]
-  
+ 
 /*------------------------ Cached Element References ------------------------*/
 
 const squareEls = document.querySelectorAll(".sqr")
